@@ -2,10 +2,63 @@
     font-family: "Montserrat", serif;
 }
 
-#about-me img {
-    width: 398px;
-    height: auto;
+/* center page content */
+body {
+    width: 812px;
+    margin: auto;
 }
+
+/* TO DO - header CSS */
+
+/* TO DO - nav CSS */
+
+
+/* About me section*/
+#about-me {
+    display: flex;
+    flex-direction: column;
+    height: 463px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #89AD6D;
+    height: 24px;
+}
+
+#about-me figure, #about-me p, h2 {
+    margin: 8px 0;
+}
+
+#about-me div {
+    display: flex;
+    flex-direction: row;
+}
+
+#about-me figure, #about-me p  {
+    width: 406px;
+    height: 400px;
+}
+
+#about-me p {
+    margin-left: 16px;
+}
+
+#about-me img {
+    width: 406px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#about-me p {
+    line-height: 20px;
+}
+
+/* TO DO - project work CSS */
+
+/* TO DO - contact CSS */
 
 /* Responsive CSS for small devices */
 
