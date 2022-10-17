@@ -1,5 +1,6 @@
 * {
     font-family: "Montserrat", serif;
+    scroll-behavior: smooth;
 }
 
 /* center page content */
@@ -23,8 +24,26 @@ h1 {
     line-height: 30px;
 }
 
-/* TO DO - nav CSS */
+/* Nav CSS */
+nav {
+    margin-bottom: 350px;
+}
 
+nav li {
+    margin-bottom: 24px;
+}
+
+nav a {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 58px;
+    color: #89AD6D;
+    text-decoration: none;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
 
 /* About me section*/
 #about-me {
