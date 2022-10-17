@@ -150,9 +150,13 @@ h2 {
 
 #contact-me ul {
     margin-top: 8px;
+    height: 48px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
 }
 
 #contact-me li img {
@@ -160,7 +164,22 @@ h2 {
     width: 34px;
     object-fit: fill;
 }
-/* TO DO - make contact icons work via popups and/or clickable links */
+
+#phone:hover::after {
+    content: "405.742.6825";
+}
+
+#email:hover::after {
+    content: "toasterrage@gmail.com";
+}
+
+.show-contact:hover::after {
+    margin-left: 10px;
+    font-size: 34px;
+    font-weight: 500;
+    position: relative;
+    bottom: 3px;
+}
 
 /* Responsive CSS for small devices */
 
