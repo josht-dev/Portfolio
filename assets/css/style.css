@@ -88,7 +88,59 @@ h2 {
     line-height: 20px;
 }
 
-/* TO DO - project work CSS */
+/* Project work CSS - the sections */
+#my-work {
+    width: 812px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 96px 0 80px 0;
+}
+
+#my-work section {
+    height: auto;
+    position: relative;
+    margin: 8px 0;
+    z-index: 1;
+}
+
+#project-large {
+    width: 100%;
+}
+
+.project-small {
+    width: 49%;
+}
+
+/* Project work CSS - the label banners */
+.project-label {
+    position: absolute;
+    bottom: 50px;
+    z-index: 2;
+    background-color: #89AD6D;
+    color: #FBFAF8;
+    width: fit-content;
+    padding: 15px;
+    font-size: 20px;
+}
+
+/* Project work CSS - the link/img */
+.project-img {
+    width: 100%;
+    overflow: hidden;
+    object-fit: none;
+    object-position: top left;
+}
+
+#project-first {
+    height: 500px;
+    object-position: top left;
+}
+
+.project-other {
+    height: 250px;
+    object-position: top center;
+}
 
 /* Contact CSS */
 #contact-me {
