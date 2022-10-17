@@ -90,7 +90,25 @@ h2 {
 
 /* TO DO - project work CSS */
 
-/* TO DO - contact CSS */
+/* Contact CSS */
+#contact-me {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+#contact-me ul {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact-me li img {
+    height: 34px;
+    width: 34px;
+    object-fit: fill;
+}
+/* TO DO - make contact icons work via popups and/or clickable links */
 
 /* Responsive CSS for small devices */
 
