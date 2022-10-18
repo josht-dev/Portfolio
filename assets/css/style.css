@@ -69,28 +69,25 @@ h2 {
 }
 
 #about-me figure, #about-me p  {
-    width: 406px;
+    width: 50%;
     height: 400px;
 }
 
 #about-me p {
     margin-left: 16px;
+    line-height: 20px;
 }
 
 #about-me img {
-    width: 406px;
+    width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
 }
 
-#about-me p {
-    line-height: 20px;
-}
-
 /* Project work CSS - the sections */
 #my-work {
-    width: 812px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -130,6 +127,7 @@ h2 {
     overflow: hidden;
     object-fit: none;
     object-position: top left;
+    filter: blur(5px) brightness(60%);
 }
 
 #project-first {
@@ -140,6 +138,10 @@ h2 {
 .project-other {
     height: 250px;
     object-position: top center;
+}
+
+.project-img:hover, .project-img:active {
+    filter: blur(0) brightness(100%);
 }
 
 /* Contact CSS */
@@ -164,15 +166,15 @@ h2 {
     object-fit: fill;
 }
 
-#phone:hover::after {
+#phone:hover::after, #phone:active::after {
     content: "405.742.6825";
 }
 
-#email:hover::after {
+#email:hover::after, #email:active::after {
     content: "toasterrage@gmail.com";
 }
 
-.show-contact:hover::after {
+.show-contact:hover::after, .show-contact:active::after {
     margin-left: 10px;
     font-size: 34px;
     font-weight: 500;
@@ -181,13 +183,74 @@ h2 {
 }
 
 /* Responsive CSS for small devices */
+/* Tablet - 720-1023 */
+@media screen and (max-width: 1023px) {
+    body {
+        width: 688px;
+        margin: 16px;
+    }
+}
 
 /* Mobile - 719 and below */
 @media screen and (max-width: 719px) {
-    
-}
+    body {
+        width: 355px;
+        margin: 8px;
+    }
+    #about-me {
+        height: auto;
+    }
 
-/* Tablet - 720-1023 */
-@media screen and (max-width: 1023px) {
+    #about-me div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-me figure, #about-me p  {
+        width: 100%;
+    }
+
+    #about-me p {
+        margin-left: 0;
+    }
+
+    .project-small {
+        width: 100%;
+    }
+
+    .project-label {
+        bottom: 10px;
+    }
+
+    #project-first {
+        height: 250px;
+    }
     
+    .project-other {
+        height: 100px;
+    }
+
+    #contact-me ul {
+        flex-flow: row wrap;
+        height: fit-content;
+    }
+
+    #contact-me li {
+        width: 50%;
+        padding-left: 50px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    #email:hover::after, #email:active::after {
+        position: relative;
+        right: 175px;
+    }
+
+    .show-contact:hover::after, .show-contact:active::after {
+        margin-left: 5px;
+        font-size: 24px;
+        right: 50px;
+        top: 25px;
+    }
 }
